@@ -1,0 +1,12 @@
+# Exported from Render on 2024-06-01T14:58:35Z
+services:
+- type: web
+  name: expense_tracker
+  runtime: docker
+  buildCommand: docker build -t myimage -f path/to/Dockerfile .
+  repo: https://github.com/uday01330/expense_tracker
+  plan: free
+  region: oregon
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+version: "1"
